@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Memories</title>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="kuromi-bg">
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===== TOP CHARACTER INTERACTION ===== -->
+<section class="top-section">
+
+
+    <img id="characterImg7" src="Picture7-Photoroom.png" class="character small" />
+
+
+    <p id="charText1">I wanted to show you something special…</p>
+    <button id="charBtn" onclick="continueText()">Yes</button>
+
+
+    <p id="charText2" class="hidden">
+    Everything below is for you. Scroll slowly.
+    </p>
+
+
+</section>
+
+
+<hr class="section-break" />
+
+
+<!-- ===== LETTER ===== -->
+<section class="letter-section">
+
+
+<div id="letter" class="letter closed">
+
+
+<button id="heartBtn" class="heart" onclick="openLetter()">❤</button>
+
+
+<div class="letter-content">
+<p>
+TESTING
+
+There isn’t a single day that passes when I don’t think of you. Your smile lingers in my mind long after I see it, and your laughter feels like the sweetest melody I could ever hear. Being with you, even in the simplest moments, makes everything brighter, warmer, and more meaningful.
+I love the way your presence can turn an ordinary day into something extraordinary. I love how your kindness and strength inspire me to be better. I love you—not just for who you are, but for how I feel when I’m with you.
+I may not always find the perfect words, but I hope you can feel in my every glance, every touch, and every thought how deeply you are cherished. You are my heart, my comfort, my joy, and my home.
+I want to be by your side through all of life’s highs and lows, to laugh with you, dream with you, and even just sit in silence with you. You are the piece of my soul I didn’t know was missing until I met you.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<hr class="section-break" />
+
+
+<!-- ===== PHOTOS ===== -->
+<section class="photo-section">
+
+
+<h2 class="memory-title">Our Memories</h2>
+
+
+<div id="photoGrid" class="photo-grid">
+<div class="photo-frame add-frame" onclick="triggerUpload()">+</div>
+</div>
+
+
+<input type="file" id="photoInput" accept="image/*" hidden />
+
+
+</section>
+
+
+
+
+<!-- ===== IMAGE VIEWER ===== -->
+<div id="viewer" class="viewer hidden">
+<button class="delete-btn" onclick="deleteCurrent()">🗑</button>
+<button class="close-btn" onclick="closeViewer()">✕</button>
+<img id="viewerImg" />
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
